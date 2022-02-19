@@ -1,0 +1,139 @@
+/* 
+ #TITLE DefaultCssSeed
+*/
+/* a completely empty css that should force everything to look like it really did */
+a.help {
+	display: block;
+	font-size: smaller;
+	text-align: right;
+}
+
+/* this is used in proteinfamilies.cgi to reduce the visibility of protein families. Makes font grey */
+.decrease_visibility {
+	color: grey;
+}
+
+.increase_visibility{
+	background-color: yellow;
+}
+
+.diagnostic {
+    font-size: 0.8em;
+    display: block; 
+    float: left;
+    clear: right;
+    margin: 2em;
+    border: 1px solid black;
+    width: 30%;
+    background-color: yellow;
+}
+        
+.debug {
+ background-color: yellow;
+}
+
+/* These things are invisible to begin with, and then we show/hide them with javascript */
+div#linkselsewhere{display: none;}
+div#identicalproteins{display: block;}
+div#attributes{display: none;}
+div#proteinfamilies {display: none;}
+div#indexcgisettings {display: none;}
+div#proteincgisettings {display: none;}
+div#subsyscgisettings {display: none;}
+
+
+/* This is all for start.cgi */
+
+form.firstform{
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+ padding: 3em;
+}
+p#userid{
+ margin-left: auto;
+ margin-right: auto;
+ width: 75%;
+ padding: 3em;
+}
+
+a#help {
+ font-size: small;
+ font-family: sans-serif;
+ font-style: italic;
+}
+
+.emptyuserinput {
+ background-color: silver;
+}
+
+.go {
+ background-color: lightblue;
+ padding: 0.5em;
+ font-size: larger;
+ text-align: center;
+}
+.center {text-align: center}
+
+.Virus {background-color: #AAFF66; border-bottom-style: dashed; border-bottom-width: 1px}
+.Eukaryota {background-color: #BB66FF; border-bottom-style: dashed; border-bottom-width: 1px}
+.Archaea {background-color: #DDAAAA; border-bottom-style: dashed; border-bottom-width: 1px}
+.unknown {background-color: lightgrey; border-bottom-style: dashed; border-bottom-width: 1px}
+.EnvironmentalSample {background-color: #AADDFF; border-bottom-style: dashed; border-bottom-width: 1px}
+.Bacteria {background-color: #66CCFF; border-bottom-style: dashed; border-bottom-width: 1px}
+
+
+/* Put a black border around things, and add a margin */
+
+.bordermargin {
+ margin: 20px 20px;
+ padding: 20px 20px;
+ border: solid black 1px;
+}
+
+/* same as above, but no border, just the margin */
+.widemargin {
+ margin: 20px 20px;
+ padding: 20px 20px;
+ /* border: solid black 1px; */
+}
+/* define a solid white background for tables that might overrun borders */
+table.white {
+ background-color: #FFFFFF;
+}
+
+/* A floating box
+
+To use this, put a <div> in the code for the whole width, and then put a <div class="float"> for the text that should be here
+
+*/
+
+div.bluefloat {
+    width: 20%;
+    float: right;
+    margin: 0;
+    margin-left: 10px;
+    padding: 10px;
+    /* border: 1px solid black; */
+    background-color: lightblue;
+    font-size: 80%;
+    font-family: sans-serif;
+    clear: right;
+}
+div.whitefloat {
+    width: 20%;
+    float: right;
+    margin: 0;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 80%;
+    font-family: sans-serif;
+    clear: right;
+}
+
+/* Some color for subsys.cgi. Likely to be unpopular, but we'll see */
+
+div.spreadsheet {
+    background-color: lightblue;
+}
+
